@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = '/';
+const url = 'api/todos/';
 
 class TodosService {
   // get todos
