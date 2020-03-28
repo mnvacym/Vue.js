@@ -1,5 +1,5 @@
 const express = require("express");
-const connectDB = require("./config/db");
+const connectDB = require("../config/db");
 const path = require("path");
 const cors = require("cors");
 
@@ -18,11 +18,10 @@ app.use("/api/todos", require("./routes/api/todos"));
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {
   // Set static folder
-  app.use(express.static("client/dist"));
+  app.use(express.static(__dirname + '/public/'));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
-  });
+  // handle spa
+  app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
 }
 
 const PORT = process.env.PORT || 5000;

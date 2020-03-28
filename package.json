@@ -4,10 +4,8 @@
   "description": "todo app for merve",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
-    "client": "npm run serve --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
   },
   "author": "rango",
   "license": "MIT",
