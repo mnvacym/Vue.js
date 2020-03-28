@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = 'http://localhost:5000/api/todos';
+const url = '/';
 
 class TodosService {
   // get todos
