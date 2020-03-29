@@ -138,7 +138,9 @@ export default {
   },
   async created() {
     try {
-      this.todos = await TodosService.getTodos();
+      setTimeout(async () => {
+        this.todos = await TodosService.getTodos();
+      }, 1500);
     } catch (error) {
       this.error = error.message;
     }
