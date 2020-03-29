@@ -148,7 +148,8 @@ export default {
       await TodosService.deleteTodo(id);
       this.todos = await TodosService.getTodos();
     },
-    async addTodo() {
+    async addTodo(event) {
+      event.preventDefault();
       await TodosService.createTodo(this.task, this.date);
       this.todos = await TodosService.getTodos();
     },
@@ -276,8 +277,9 @@ body {
   width: 16rem;
   margin: auto;
   margin-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 25rem;
   color: #f50057;
+  font-weight: 600;
 }
 
 .circle {
