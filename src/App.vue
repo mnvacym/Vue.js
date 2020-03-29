@@ -329,8 +329,8 @@ body {
   position: absolute;
   top: -3rem;
   left: 0.5rem;
-  opacity: 0;
-  transform: translate(-2rem);
+  // opacity: 0;
+  // transform: translate(-2rem);
   transition: all 0.5s;
   cursor: pointer;
   /* color: #43853d; */
@@ -339,10 +339,10 @@ body {
   width: 40px;
 }
 
-.list-item:hover .check {
-  opacity: 1;
-  transform: translate(0, 0);
-}
+// .list-item:hover .check {
+//   opacity: 1;
+//   transform: translate(0, 0);
+// }
 
 .check:hover {
   /* background: #43853d; */
@@ -355,8 +355,8 @@ body {
   position: absolute;
   top: -3rem;
   right: 0.5rem;
-  opacity: 0;
-  transform: translate(2rem);
+  // opacity: 0;
+  // transform: translate(2rem);
   transition: all 0.5s;
   cursor: pointer;
   color: purple;
@@ -365,10 +365,10 @@ body {
   width: 2rem;
 }
 
-.list-item:hover .remove {
-  opacity: 1;
-  transform: translate(0, 0);
-}
+// .list-item:hover .remove {
+//   opacity: 1;
+//   transform: translate(0, 0);
+// }
 
 .remove:hover {
   background: red;
