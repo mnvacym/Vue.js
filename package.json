@@ -16,7 +16,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "axios": "^0.19.2",
     "core-js": "^2.6.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "uuid": "^3.3.2",
